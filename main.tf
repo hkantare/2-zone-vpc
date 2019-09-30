@@ -16,7 +16,7 @@ resource "ibm_is_vpc" "vpc1" {
   name = "vpc-${random_id.name1.hex}"
 }
 
-resource "ibm_is_subnet" "subnet1" {
+/*resource "ibm_is_subnet" "subnet1" {
   name            = "subnet-${random_id.name1.hex}"
   vpc             = "${ibm_is_vpc.vpc1.id}"
   zone            = "${local.ZONE1}"
@@ -207,4 +207,4 @@ resource "ibm_is_security_group_rule" "sg2_app_tcp_rule" {
     port_min = 80
     port_max = 80
   }
-}
+}*/
